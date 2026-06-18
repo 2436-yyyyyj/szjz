@@ -1,29 +1,31 @@
-GitHub Pages 手机端优化代码更新
-===============================
+GitHub Pages 上传说明
+=====================
 
-把本目录内的文件上传到 GitHub 仓库根目录，覆盖同名文件：
+把本目录内的所有内容上传到 GitHub 仓库根目录。
+
+仓库根目录必须直接看到这些项目：
 
 - index.html
 - styles.css
 - script.js
+- data.js
 - manifest.webmanifest
 - sw.js
+- contact.vcf
+- .nojekyll
+- assets/
 
-本更新不包含产品图片。请保留仓库里已有的这些目录：
+不要只上传 index.html。
+不要上传 19MB 的单文件版 HTML。
+不要把 github-pages-release-final 这个文件夹作为外层目录上传。
 
-- assets/brand/splash-cover.jpg 或 assets/brand/splash.jpg
-- assets/products_1/SZ-001.jpg 至 SZ-100.jpg
-- assets/products_2/SZ-101.jpg 至 SZ-151.jpg
-- assets/catalog/pages/page-01.jpg 至 page-12.jpg
+正确发布地址：
 
-主要优化：
+https://2436-yyyyyj.github.io/SZJZ.github.io/
 
-- 手机首页图片使用 object-fit: contain，完整显示，不再裁切。
-- 产品列表首屏只渲染 24 个型号，点击“继续显示更多型号”再追加。
-- 搜索仍然匹配全部 151 个型号。
-- 点击产品只更新详情区，不再重建整张产品列表。
-- sw.js 会清理旧缓存，降低手机端继续读取旧版本的概率。
+上传到 GitHub 时需要保留以下目录结构：
 
-更新后访问：
-
-https://2436-yyyyyj.github.io/SZJZ.github.io/?v=20260618
+- `assets/brand/splash-cover.jpg`
+- `assets/products_1/SZ-001.jpg` 至 `SZ-100.jpg`
+- `assets/products_2/SZ-101.jpg` 至 `SZ-151.jpg`
+- `assets/catalog/pages/page-01.jpg` 至 `page-12.jpg`
